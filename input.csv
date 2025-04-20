@@ -1,0 +1,9 @@
+city_name,seismic_level,risk_percent
+Santiago,5,80.0
+Valparaiso,4,60.0
+Concepción,4,75.6
+Puerto Montt,3,45.5
+Arica,2,110.0
+Iquique,4
+Temuco,a,30.5
+Talca,3,49.3
