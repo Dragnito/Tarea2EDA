@@ -12,5 +12,4 @@ CityData *read_csv(const char *filename, int *num_cities);
 
 void free_data(CityData *cities);
 
-
 #endif

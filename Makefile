@@ -10,7 +10,9 @@ CFLAGS = -Wall -Wextra -std=c99 -I./modules
 # Archivos fuente
 SRCS = main.c \
        modules/processor.c \
-       modules/validator.c
+       modules/validator.c \
+       modules/sorter.c
+
 
 # Archivos objeto (los .o generados)
 OBJS = $(SRCS:.c=.o)

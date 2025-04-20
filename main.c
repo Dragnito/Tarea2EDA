@@ -3,6 +3,7 @@
 #include <string.h>
 #include "processor.h" // Incluir el encabezado que contiene CityData
 #include "validator.h"
+#include "sorter.h"
 
 int main(int argc, char *argv[]) {
     if (argc != 4) {
@@ -33,7 +34,43 @@ int main(int argc, char *argv[]) {
 
     printf("Se leyeron %d ciudades. %d validas.\n", total_ciudades, count_validas);
 
-    // (Más adelante: ordenar y escribir en archivo)
+    // Aplicacion del algoritmo "Quicksort" para ordenar las ciudades válidas
+    quicksort_ciudades(validas, 0, count_validas - 1);
+
+    printf("\nCiudades validas ordenadas:\n");
+    for (int i = 0; i < count_validas; i++) {
+        printf("%s - Nivel: %d - Riesgo: %.1f - Tiene riesgo: %d\n",
+            validas[i].city_name,
+            validas[i].seismic_level,
+            validas[i].risk_percent,
+            validas[i].has_risk_percent);
+    }
+
+    // Crea el archivo de salida
+    FILE *salida = fopen(output_file, "w");
+    if (!salida) {
+        perror("No se pudo crear el archivo de salida");
+        free_data(ciudades);
+        free(validas);
+        return 1;
+    }
+    
+    fprintf(salida, "city_name,seismic_level,risk_percent,has_risk_percent\n");
+    
+    for (int i = 0; i < count_validas; i++) {
+        fprintf(salida, "%s,%d,%.1f,%d\n",
+            validas[i].city_name,
+            validas[i].seismic_level,
+            validas[i].risk_percent,
+            validas[i].has_risk_percent);
+    }
+    
+    fclose(salida);
+    printf("Archivo 'output.csv' generado con éxito.\n");
+    
+    
+
+
 
     // Liberar memoria
     free_data(ciudades);
