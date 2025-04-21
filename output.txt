@@ -1,4 +1,21 @@
-city_name seismic_level risk_percent has_risk_percent
-Santiago 5 80.0 1
-Concepción 4 75.6 1
-Valparaiso 4 60.0 1
+city_name seismic_level risk_percent 
+Zamora / 5 / 90.0 / 
+Antofagasta / 5 / 85.0 / 
+Santiago / 5 / 80.0 / 
+Valparaiso / 4 /  / 
+Copiapó / 4 /  / 
+Los Ángeles / 4 / 75.0 / 
+Iquique / 4 / 75.0 / 
+Concepción / 4 / 75.0 / 
+Rancagua / 4 / 70.0 / 
+Valdivia / 3 / 55.0 / 
+Talca / 3 / 55.0 / 
+Chillán / 3 / 55.0 / 
+Puerto Montt / 3 / 45.0 / 
+Ovalle / 3 / 45.0 / 
+La Serena / 3 / 45.0 / 
+Curicó / 3 / 45.0 / 
+San Fernando / 2 / 30.0 / 
+Quillota / 2 / 30.0 / 
+Osorno / 2 / 30.0 / 
+Punta Arenas / 1 / 15.0 / 

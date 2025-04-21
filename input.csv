@@ -1,9 +1,30 @@
 city_name,seismic_level,risk_percent
+Zamora,5,90.0
+Antofagasta,5,85.0
 Santiago,5,80.0
-Valparaiso,4,60.0
-Concepción,4,75.6
-Puerto Montt,3,45.5
+Iquique,4,75.0
+Concepción,4,75.0
+Los Ángeles,4,75.0
+Rancagua,4,70.0
+Copiapó,4,
+Valparaiso,4,
+Valdivia,3,55.0
+Chillán,3,55.0
+Talca,3,55.0
+Puerto Montt,3,45.0
+Curicó,3,45.0
+La Serena,3,45.0
+Ovalle,3,45.0
+San Fernando,2,30.0
+Osorno,2,30.0
+Quillota,2,30.0
+Punta Arenas,1,15.0
 Arica,2,110.0
-Iquique,4
-Temuco,a,30.5
-Talca,3,49.3
+Temuco,6,30.5
+San Pedro,4,-10.0
+Talcahuano,4,80.0
+Calama,5,85.0
+Mejillones,4,70.0
+Linares,4,70.0
+Coyhaique,2,25.0
+Illapel,3,35.0

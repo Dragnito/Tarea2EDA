@@ -61,15 +61,20 @@ int main(int argc, char *argv[]) {
     }
     
     // Escribir el encabezado en el archivo de salida
-    fprintf(salida, "city_name seismic_level risk_percent has_risk_percent\n");
+    fprintf(salida, "city_name seismic_level risk_percent \n");
     
     // Escribir los datos de las ciudades validas en el archivo de salida
     for (int i = 0; i < count_validas; i++) {
-        fprintf(salida, "%s %d %.1f %d\n",
-            validas[i].city_name,
-            validas[i].seismic_level,
-            validas[i].risk_percent,
-            validas[i].has_risk_percent);
+        if (validas[i].risk_percent == 0) {
+            fprintf(salida, "%s / %d /  / \n", // Dejar en blanco si risk_percent es 0
+                validas[i].city_name,
+                validas[i].seismic_level);
+        } else {
+            fprintf(salida, "%s / %d / %.1f / \n", // Imprimir el valor si no es 0
+                validas[i].city_name,
+                validas[i].seismic_level,
+                validas[i].risk_percent);
+        }
     }
     
     fclose(salida); // Cerrar el archivo de salida
