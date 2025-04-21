@@ -1,1 +1,3 @@
-# Tarea2EDA
+Christian Looff
+Valentin Malov
+

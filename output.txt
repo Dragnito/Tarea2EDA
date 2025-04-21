@@ -1,0 +1,4 @@
+city_name seismic_level risk_percent has_risk_percent
+Santiago 5 80.0 1
+Concepción 4 75.6 1
+Valparaiso 4 60.0 1
